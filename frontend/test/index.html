@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .girlsTrails {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            animation-name: moveBlock;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            transition: opacity 0.3s;
+            box-shadow: 0 0 10px rgba(57, 109, 127, 0.8);
+            border-radius: 90%;
+        }
+
+        /* Efeito de sombra nas classes com prefixo "blur" */
+        [class^="blur"] {
+            box-shadow:
+                -10px 0 0 #999,
+                -20px 0 0 #777,
+                -30px 0 0 #666,
+                -40px 0 0 #555,
+                -50px 0 0 #444;
+        }
+
+        @keyframes moveBlock {
+            0% {
+                transform: translate(0, 0);
+            }
+            
+            /* fazer o trail de forma mais melhor 😎😎 */
+            /*     0  35px 0 #999,
+    0  55px 0 #999,
+    0  75px 0 #999,
+    0 95px 0 #777,
+    0  115px 0 #666,
+    0  135px 0 #555,
+    0  155px 0 #444, 
+    0  175px 0 #999,
+    0  195px 0 #999,
+    0  215px 0 #999,
+    0  235px 0 #999 */
+
+  4% {box-shadow:
+    
+    0  15px 0 #999, 
+        0  35px 0 #999,
+    0  55px 0 #999,
+    0  75px 0 #999,
+  }
+
+            16.67% {
+                transform: translate(0, -1000%);
+            }
+/* 
+            33.33% {
+                transform: translate(-500%, -1000%);
+            }
+
+            50% {
+                transform: translate(-1200%, 0);
+            }
+
+            66.67% {
+                transform: translate(500%, 1000%);
+            }
+
+            83.33% {
+                transform: translate(0, -1000%);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            } */
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Bloco 1 com sombra -->
+        <div class="girlsTrails blur" style="background-color: aqua; top: 50%; left: 40%;"></div>
+
+        <!-- Bloco 2 com sombra -->
+        <div class="girlsTrails blur" style="background-color: blueviolet; top: 50%; left: 50%;"></div>
+
+        <!-- Bloco 3 com sombra -->
+        <div class="girlsTrails blur" style="background-color: green; top: 50%; left: 60%;"></div>
+    </div>
+</body>
+
+</html>
