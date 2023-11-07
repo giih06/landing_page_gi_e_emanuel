@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.header {
+    text-align: center; /* Centraliza o conteúdo dentro do cabeçalho. */
+}
+
+.header h1 {
+    font-size: 2rem;
+    white-space: nowrap;
+    font-size: 24px;
+}
+  
+.header img {
+    max-width: 100%; /* Define a largura máxima da imagem como 100% do elemento pai. A imagem se ajustará automaticamente à largura do elemento pai. */
+}
+
+/* Adicione uma @media query para aplicar estilos específicos quando a largura da tela atingir um determinado ponto de quebra. */
+@media (max-width: 768px) {
+    .header img {
+      max-width: 80%; /* Reduz a largura máxima da imagem para 80% quando a largura da tela for menor ou igual a 768px. */
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Over There';
+    src: url('../test/over_there/Over\ There.ttf');
+}
+
+h1 {
+    font-family: 'Over There';
+    display: flex;
+    justify-content: center;
+}
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.girlsTrails {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        animation-name: moveBlock;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        transition: opacity 0.3s;
+        box-shadow: 0 0 10px rgba(57, 109, 127, 0.8);
+        border-radius: 90%;
+    }
+/* Defina as classes "blur1" a "blur30" com atrasos incrementais */
+.girlsTrails.blur1 {
+    animation-delay: 55ms;
+    opacity: 0.1;
+}
+
+.girlsTrails.blur2 {
+    animation-delay: 85ms;
+    opacity: 0.2;
+}
+
+.girlsTrails.blur3 {
+    animation-delay: 115ms;
+    opacity: 0.3;
+}
+
+.girlsTrails.blur4 {
+    animation-delay: 145ms;
+    opacity: 0.4;
+}
+
+.girlsTrails.blur5 {
+    animation-delay: 175ms;
+    opacity: 0.5;
+}
+
+.girlsTrails.blur6 {
+    animation-delay: 205ms;
+    opacity: 0.6;
+}
+
+.girlsTrails.blur7 {
+    animation-delay: 235ms;
+    opacity: 0.7;
+}
+
+.girlsTrails.blur8 {
+    animation-delay: 265ms;
+    opacity: 0.8;
+}
+
+.girlsTrails.blur9 {
+    animation-delay: 295ms;
+    opacity: 0.9;
+}
+
+.girlsTrails.blur10 {
+    animation-delay: 325ms;
+    opacity: 1;
+}
+
+.girlsTrails.blur11 {
+    animation-delay: 355ms;
+    opacity: 0.9;
+}
+
+.girlsTrails.blur12 {
+    animation-delay: 385ms;
+    opacity: 0.8;
+}
+
+.girlsTrails.blur13 {
+    animation-delay: 415ms;
+    opacity: 0.7;
+}
+
+.girlsTrails.blur14 {
+    animation-delay: 445ms;
+    opacity: 0.6;
+}
+
+.girlsTrails.blur15 {
+    animation-delay: 475ms;
+    opacity: 0.5;
+}
+
+.girlsTrails.blur16 {
+    animation-delay: 505ms;
+    opacity: 0.4;
+}
+
+.girlsTrails.blur17 {
+    animation-delay: 535ms;
+    opacity: 0.3;
+}
+
+.girlsTrails.blur18 {
+    animation-delay: 565ms;
+    opacity: 0.2;
+}
+
+.girlsTrails.blur19 {
+    animation-delay: 595ms;
+    opacity: 0.1;
+}
+
+.girlsTrails.blur20 {
+    animation-delay: 625ms;
+    opacity: 0.1;
+}
+
+.girlsTrails.blur21 {
+    animation-delay: 655ms;
+    opacity: 0.2;
+}
+
+.girlsTrails.blur22 {
+    animation-delay: 685ms;
+    opacity: 0.3;
+}
+
+.girlsTrails.blur23 {
+    animation-delay: 715ms;
+    opacity: 0.4;
+}
+
+.girlsTrails.blur24 {
+    animation-delay: 745ms;
+    opacity: 0.5;
+}
+
+.girlsTrails.blur25 {
+    animation-delay: 775ms;
+    opacity: 0.6;
+}
+
+.girlsTrails.blur26 {
+    animation-delay: 805ms;
+    opacity: 0.7;
+}
+
+.girlsTrails.blur27 {
+    animation-delay: 835ms;
+    opacity: 0.8;
+}
+
+.girlsTrails.blur28 {
+    animation-delay: 865ms;
+    opacity: 0.9;
+}
+
+.girlsTrails.blur29 {
+    animation-delay: 895ms;
+    opacity: 0.9;
+}
+
+.girlsTrails.blur30 {
+    animation-delay: 925ms;
+    opacity: 0.1;
+}
+
+@keyframes moveBlock {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    16.67% {
+        transform: translate(0, -1000%);
+    }
+
+    33.33% {
+        transform: translate(-500%, -1000%);
+    }
+
+    50% {
+        transform: translate(-1200%, 0);
+    }
+
+    66.67% {
+        transform: translate(500%, 1000%);
+    }
+
+    83.33% {
+        transform: translate(0, -1000%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
